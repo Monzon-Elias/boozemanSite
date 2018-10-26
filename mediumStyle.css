@@ -1,0 +1,44 @@
+ @media only screen and (min-width: 41.5em) {
+     
+     /* NAV STYLE */
+     
+nav button{
+    display: none;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul.hide{
+    display: flex;
+}
+nav ul li a{
+    border: none;
+    border-right: 1px solid rgba(0,0,0,0.3);
+    padding: .8rem 1rem;
+}
+
+.smallBoxes-container, .mySlides, .buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.smallBoxes:first-child{
+         margin-left: 33px;
+}
+.smallBoxes:last-child{
+         margin-right: 33px;
+}
+thead tr:first-child{
+         font-size: 1.5em;
+}
+     /*H1 SIZE*/
+     
+h1{
+   font-size: 3em;      
+}
+     /*BUTTON TEXT SIZE*/
+     
+.button{
+    font-size: 1em;     
+}
+}

@@ -1,0 +1,11 @@
+
+{
+    "tireChange": [9, 80],
+    "paingingPersonalization": [200, 0],
+    "suspensionRepairChange": [40, 200],
+    "brakesRepairChange": [80, 200],
+    "spokesCentering": [30, 3],
+    "gearRepairChange": [30, 200],
+    "chainChange": [10, 30],
+    "weldingService": [90, 0]
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Mountain Spoke | Services Page</title>
+        <meta name="author" content="Elías Monzón">
+        <meta name="description" content="Services Page">
+        <link href="style.css" type="text/css" rel="stylesheet"/>
+        <link href="mediumStyle.css" type="text/css" rel="stylesheet"/>
+        <link href="largeStyle.css" type="text/css" rel="stylesheet"/>	
+        <link href="normalize.css" type="text/css" rel="stylesheet"/>
+        <link href="Images/favicon-32x32.png" rel="icon"/>
+    </head>	
+
+    <body onload="myFunction()">
+        <div id="topbox"></div>
+
+        <header>
+            <img src="Images/logo.png" alt="logo"/>
+        </header>
+
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="sales.html">Sales</a></li>
+                <li class="active"><a href="#">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="3">Repairing Services</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">Service</th>
+                        <th scope="col">Service Cost</th> 
+                        <th scope="col">Cost of Repair Parts</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tire Change</td>
+                        <td>$<span id="1"></span>,0</td> 
+                        <td>$<span id="1a"></span>,0 (each)</td>
+                    </tr>
+                    <tr>
+                        <td>Painting/Personalization</td>
+                        <td>$<span id="2"></span>,0</td> 
+                        <td>$<span id="2a"></span>,0</td>
+                    </tr>
+                    <tr>
+                        <td>Suspension repair/change</td>
+                        <td>$<span id="3"></span>,0</td> 
+                        <td>$<span id="3a"></span>,0</td>
+                    </tr>
+                    <tr>
+                        <td>Brakes repair/change</td>
+                        <td>$<span id="4"></span>,0</td> 
+                        <td>$<span id="4a"></span>,0 (each)</td>
+                    </tr>
+                    <tr>
+                        <td>Spokes Centering</td>
+                        <td>$<span id="5"></span>,0</td>
+                        <td>$<span id="5a"></span>,0 (each)</td>
+                    </tr> 
+                    <tr>
+                        <td>Gear repair/change</td>
+                        <td>$<span id="6"></span>,0</td> 
+                        <td>$<span id="6a"></span>,0</td>
+                    </tr>
+                    <tr>
+                        <td>Chain change</td>
+                        <td>$<span id="7"></span>,0</td> 
+                        <td>$<span id="7a"></span>,0</td>
+                    </tr>
+                    <tr>
+                        <td>Welding Service</td>
+                        <td>$<span id="8"></span>,0</td> 
+                        <td>$<span id="8a"></span>,0</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">We Only Use <b>High Quality</b> Repairing Parts</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </main>
+
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tours.html">Tours</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="sales.html">Sales</a></li>
+                    <li class="active"><a href="#">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div>
+                <p>All content &copy;</p>
+                <p>Author: Elías Monzón</p> 
+                <p id="currentdate">Current date and time</p>
+            </div>
+        </footer>
+        <script src="currentDate.js"></script>
+        <script src="hamburger.js"></script>
+        <script src="ajax.js"></script>
+    </body>
+</html>

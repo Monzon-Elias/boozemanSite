@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Mountain Spoke | Home Page</title>
+        <meta name="author" content="Elías Monzón">
+        <meta name="description" content="Home Page">
+        <link href="style.css" type="text/css" rel="stylesheet"/>
+		<link href="mediumStyle.css" type="text/css" rel="stylesheet"/>
+		<link href="largeStyle.css" type="text/css" rel="stylesheet"/>
+        <link href="normalize.css" type="text/css" rel="stylesheet"/>
+        <link href="Images/favicon-32x32.png" rel="icon"/>
+    </head>	
+    
+    <body onload="myFunction()">
+        <div id="topbox"></div>
+
+        <header>
+            <img src="Images/logo.png" alt="logo"/>
+        </header>
+        
+        <nav class="clearfix">
+			<button onclick="toggleMenu()">&#9776;</button>
+			<ul id="primaryNav" class="hide">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="sales.html">Sales</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <h1>The Mountain Spoke Co.</h1>
+                <blockquote>
+                    <b>Come and meet the company that gives wings to all mountain bikers in the northern United States.</b><br/>
+                    We have been organizing mountain bike events for 20 years, repairing and selling the best bikes models for extreme activities.</blockquote>
+                <div class="mySlides fade">
+                    <figure>
+                        <img src="Images/action-bicycle-bike-web.jpg" alt="kid riding his mountain bike">
+                    </figure>
+                </div>
+                <div class="mySlides fade">
+                    <figure>
+                        <img src="Images/action-bicycle-bike2-web.jpg" alt="action mountain bike">
+                    </figure>
+                </div>
+                <div class="mySlides fade">
+                    <figure>
+                        <img src="Images/action-adventure-bicycle-1028.jpg" alt="bicycle and landscape">
+                    </figure>
+                </div>
+                <div class="mySlides fade">
+                    <figure>
+                        <img src="Images/adventure-bicycle-bike-1028.jpg" alt="bicycle in the forest">
+                    </figure>
+                </div>
+                <div class="mySlides fade">
+                    <figure>
+                        <img src="Images/bicycle-bike-daylight-web.jpg" alt=" bicycle in the mountain path">
+                    </figure>
+                </div>
+                <div class="mySlides fade">
+                    <figure>
+                        <img src="Images/montana-skyland-web.jpg" alt="beautiful Montana mountains">
+                    </figure>
+                </div>
+                <div class="mySlides fade">
+                    <figure>
+                        <img src="Images/welcomeToBozeman-web-1028-medium.jpg" alt="Welcome to Boozeman">
+                    </figure>
+                </div>
+            </div>
+            <p>
+                <b>Join our great adventure group for free!</b>
+            </p>
+            <button class="joinIn"> Join in!</button>
+        </main>
+        
+        <footer>
+            <nav>
+                <ul>
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="tours.html">Tours</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="sales.html">Sales</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div>
+                <p>All content &copy;</p>
+                <p>Author: Elías Monzón</p> 
+                <p id="currentdate">Current date and time</p>
+            </div>
+        </footer>
+    <script src="currentDate.js"></script>
+	<script src="hamburger.js"></script>
+    </body>
+</html>

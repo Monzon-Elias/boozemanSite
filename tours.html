@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Mountain Spoke | Adventures tours Page</title>
+        <meta name="author" content="Elías Monzón">
+        <meta name="description" content="Adventures tours Page">
+        <link href="style.css" type="text/css" rel="stylesheet"/> 
+		<link href="mediumStyle.css" type="text/css" rel="stylesheet"/>
+		<link href="largeStyle.css" type="text/css" rel="stylesheet"/>
+        <link href="normalize.css" type="text/css" rel="stylesheet"/>
+        <link href="Images/favicon-32x32.png" rel="icon"/>
+    </head>	
+
+    <body onload="myFunction()">
+        <div id="topbox"></div>
+
+        <header>
+        <img src="Images/logo.png" alt="logo"/>
+        </header>
+
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="#">Tours</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="sales.html">Sales</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <!--FIRST TOUR-->
+            
+            <div class="mImage">
+                <blockquote>Join our daily adventures, and be part of a wonderful group of people who enjoy our beloved sport!</blockquote>
+                <h1>The Ultimate Challenge</h1>
+                <figure>
+                    <img src="Images/action-adventure-bike-1028.jpg" alt="Mountain bike in river shore"/>
+                    <figcaption>
+                        <b>If you like adrenaline and are willing to give the best of you, this is the right option for you.</b> <br />It is advisable to have a minimum of experience and adequate physical condition before venturing into this tour.
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="smallBoxes-container">
+                <div class="smallBoxes">
+                    <p> Length: </p>
+                    <p> 10 milles </p>
+                    <button class="button"> Read more...</button>
+                </div>
+                <div class="smallBoxes">
+                    <p> Skill Level: </p>
+                    <p> Moderate </p>
+                    <button class="button"> Read more...</button>
+                </div>
+                <div class="smallBoxes">
+                    <p> Cost: </p>
+                    <p> $10 </p>
+                    <button class="button"> Read more...</button>
+                </div>
+                <div class="smallBoxes">
+                    <p> Location: </p>
+                    <p> Mountain route </p>
+                    <button class="button"> Read more...</button>
+                </div>
+            </div>
+            <button class="joinIn"> Join in!</button>
+            
+            <!--SECOND TOUR-->
+            <hr/><hr/>
+            <section>
+                <div class="mImage">
+                    <h1>The Premium Ride</h1>
+                    <figure>
+                        <img src="Images/river-side-bikers-1028.jpg" alt="Mountain bike in the forest path"/>
+                        <figcaption>
+                            If you do not have heart problems, you can participate without worries of this wonderful ride along the River Side. 
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="smallBoxes-container">
+                    <div class="smallBoxes">
+                        <p> Length: </p>
+                        <p> 5 milles </p>
+                        <button class="button"> Read more...</button>
+                    </div>
+                    <div class="smallBoxes">
+                        <p> Skill Level: </p>
+                        <p> Initial </p>
+                        <button class="button"> Read more...</button>
+                    </div>
+                    <div class="smallBoxes">
+                        <p> Cost: </p>
+                        <p> $5 </p>
+                        <button class="button"> Read more...</button>
+                    </div>
+                    <div class="smallBoxes">
+                        <p> Location: </p>
+                        <p> Coastal Route </p>
+                        <button class="button"> Read more...</button>
+                    </div>
+                </div>
+                <button class="joinIn"> Join in!</button>
+            </section>
+        </main>
+
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="#">Tours</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="sales.html">Sales</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div>
+                <p>All content &copy;</p>
+                <p>Author: Elías Monzón</p> 
+                <p id="currentdate">Current date and time</p>
+            </div>
+        </footer>
+            <script src="currentDate.js"></script>
+            <script src="hamburger.js"></script>
+    </body>
+</html>

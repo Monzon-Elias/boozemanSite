@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>
+            The Mountain Spoke | Contact Page
+        </title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Elías Monzón">
+        <meta name="description" content="Contact Page">
+        <link href="style.css" type="text/css" rel="stylesheet"/>
+		<link href="mediumStyle.css" type="text/css" rel="stylesheet"/>
+		<link href="largeStyle.css" type="text/css" rel="stylesheet"/>
+        <link href="normalize.css" type="text/css" rel="stylesheet"/>
+        <link href="Images/favicon-32x32.png" rel="icon"/>
+    </head>	
+
+    <body onload="myFunction()">
+        <div id="topbox"></div>
+
+        <header>
+            <img src="Images/logo.png" alt="logo"/>
+        </header>
+
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="sales.html">Sales</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li class="active"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+
+        <!-- CONTACT FORM -->
+            <form>
+                <h2>Contact Us</h2>
+                <!-- ABOUT YOU -->
+                <fieldset>
+                    <legend>
+                        <h3>About you</h3>
+                    </legend>
+                    <label>
+                        Full Name:
+                    </label>
+                        <input type="text" name="name" size="30" minlength="5" pattern="[a-zA-Z]+" title="Please, use only Alpha caracters" required>
+                    <br />
+                    <label>
+                        Email:
+                    </label>
+                        <input type="email" name="email" size="30" placeholder="example@gmail.com" title="Your email" required>
+                    <br />
+                    <label>
+                        Zip Code:
+                    </label>
+                    <input type="number" name="zipc" max="999999" title="Please, set your zip code" required>
+                    <br />
+                </fieldset>
+                <br />
+                <!-- ABOUT YOUR CAR -->
+                <fieldset>
+                    <legend>
+                        <h3>Your Location</h3>
+                    </legend>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.9316277611047!2d-111.09290618505297!3d45.67227287910392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718%2C+EE.+UU.!5e0!3m2!1ses!2scl!4v1523676936948" allowfullscreen></iframe>
+                    <br />
+                    <label>
+                        Comments:
+                    </label>
+                    <br />
+                    <textarea rows="4" cols="40" id="comments"></textarea>
+                    <br />
+                    <br />
+                    <button type="button" class="button">Send your info</button>
+                </fieldset>
+            </form>
+        </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tours.html">Tours</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="sales.html">Sales</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li class="active"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div>
+                <p>All content &copy;</p>
+                <p>Author: Elías Monzón</p> 
+                <p id="currentdate">Current date and time</p>
+            </div>
+        </footer>
+        <script src="currentDate.js"></script>
+        <script src="hamburger.js"></script>
+    </body>
+</html>

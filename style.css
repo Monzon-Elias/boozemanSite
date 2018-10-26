@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif|Montserrat'); 
+
+body{
+    margin: 0px;
+    font-size: 1.5em;
+    background-image: linear-gradient(#9F9392, #1b1b1b);
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify; 
+}
+
+/*TEXT*/
+h1, h2, h3, thead tr:first-child{
+    font-family: 'IBM Plex Serif', serif;
+}
+h1{
+    margin: 10px auto 0px;
+    font-size: 2em;
+    color: #000000;
+    text-align: center;
+    
+}
+blockquote{
+    text-align: center;
+}
+
+#topbox{
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    margin-top: 100px;
+    background-color: #493E40;
+    box-shadow: 5px 5px 10px;
+}
+
+header{
+    text-align: center;
+    margin-top: 20px;
+}
+/* NAV STYLE */
+
+nav{
+    width: 100%;
+    background-image: linear-gradient(#9F9392, #1b1b1b);
+}
+nav button{
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #fff; 
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul.hide{
+    display: none;
+}
+nav ul li a{
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: beige;
+    border-top: 1px solid rgba(0,0,0,0.3);  
+    font-size: 1.1em;
+}
+
+/* NAV LINKS STYLE */
+
+nav a:link{
+    color: #fefcfc;
+}
+nav a:visited{
+    color: #35fd1a;
+}
+nav a:hover{
+    color: #f5fe08;
+}
+nav a:active{
+    color: #d0d1c0;
+}
+nav a:link{
+    text-decoration: none;
+}
+li a.active{
+    color: #d0d1c0;
+}
+
+/* MAIN STYLE */
+main{
+    background-color: #9E2F2F;
+    border: 5px solid #434343;
+    border-radius: 10px;
+    min-width: 320px;
+}
+
+/* SLIDESHOW STYLE */
+/* Slideshow container */
+
+.slideshow-container/*TOUR*/, .mImage/*TOUR*/{
+    width: 100%;
+    position: relative;
+    margin: auto;
+    min-width: 320px;
+}
+.smallBoxes-container/*TOUR*/{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+/*INDEX*/
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+main p, blockquote, figcaption{
+    text-align: center;
+    font-size: 1.3em;
+}
+.joinIn{
+    display: block;
+    margin: 10px auto;
+    font-size: 1.3em;
+    color: aliceblue;
+    width: 250px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+    background-image: linear-gradient(#006622, #493E40);
+}
+
+/* BOTH LINES DIVIDING SECTIONS IN TOURS PAGE*/
+hr{
+    border: 4px solid #B37F26;
+}
+
+/*INDEX + TOUR + EVENTS + SALES + SERVICES*/
+.mySlides img, .mImage img{
+    width: 100%;
+    height: 500px;
+    border-radius: 5px;
+    border: 5px solid #434343;
+}
+
+.smallBoxes{
+    background-color: #B37F26;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+    width: 200px;
+    height: 200px;
+    border: 5px solid #434343;
+    font-size: .8em;
+}
+.smallBoxes:first-child{
+    margin-left: 0px;
+}
+.smallBoxes:last-child{
+    margin-right: 0px;
+}
+.smallBoxes p{
+    text-align: center;
+}
+.smallBoxes p:first-child{
+    font-weight: 600;
+}
+.smallBoxes button{
+    position: relative;
+    left: 30px;
+}
+.button{
+    width: 140px;
+    height: 60px;
+    background-image: linear-gradient(#006622, #493E40);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+    color: aliceblue;
+    font-size: .8em;
+    text-align: center;
+}
+
+/*SALES MARGIN BOTTOM*/
+
+section:last-child{
+    margin-bottom: 10px;
+}
+/*CONTACT*/
+
+fieldset label{
+    display: block;
+    color: #B37F26;
+}
+fieldset iframe{
+    width: 400px;
+    height: 300px;
+}
+
+/* SERVICES TABLE STYLE */
+
+table{
+    color: #B37F26;
+    margin: 10px auto;
+    min-width: 320px;
+    width: 60%;
+    border-collapse: collapse;
+    background-image: url(images/spiration%20dark.png);
+}
+table, td, th{ 
+    border: 3px solid #9F9392;
+    padding: 8px 0 8px 0;
+}
+
+thead tr:first-child{
+    font-size: 1em;
+    text-align: center;
+    color: whitesmoke;
+}
+tfoot td{
+    text-align: center;
+}
+
+/* FADING ANIMATION */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.0s;
+    animation-name: fade;
+    animation-duration: 2.0s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* CONTACT FORM STYLE */
+
+form h2{
+    text-align: center;
+    margin-bottom: -20px;
+}
+form{
+    text-align: left;
+    width: 50%;
+    margin: auto;
+    color: aliceblue;
+}
+form fieldset{
+    min-width: 320px;
+    width: 100%;
+    background-image: url(images/spiration%20dark.png);
+    border-radius: 5px;
+    margin: auto;
+} 
+form fieldset iframe{
+    width: inherit;
+}
+/* SPACE BETWEEN THE FIELDSETS */
+
+form fieldset:last-child{
+    margin-top: -30px;
+    margin-bottom: 5px;
+}
+form input{
+    width: 90%;
+    min-width: 320px;
+    font-family: inherit;
+    font-size: 1em;
+    margin: 10px auto;
+}
+form input[type="checkbox"]{
+    cursor: pointer;
+}
+#button {
+    background-color: #ea5b0c;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-family: inherit;
+    font-size: .8em;
+    cursor: pointer;
+}
+
+#button:active {
+    background: green;
+}
+/* FOOTER STYLE */
+
+footer{
+    font-size: .8em;
+}
+footer nav{
+    width: 100%;
+    margin: auto;
+    padding-top: 10px;
+    text-align: center;
+}
+footer div{
+    background-color: #493E40;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+footer div p{
+    color: azure;
+    display: inline;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

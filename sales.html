@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Mountain Spoke | Sales Page</title>
+        <meta name="author" content="Elías Monzón">
+        <meta name="description" content="Sales Page">
+        <link href="style.css" type="text/css" rel="stylesheet"/>
+		<link href="mediumStyle.css" type="text/css" rel="stylesheet"/>
+		<link href="largeStyle.css" type="text/css" rel="stylesheet"/>	
+        <link href="normalize.css" type="text/css" rel="stylesheet"/>
+        <link href="Images/favicon-32x32.png" rel="icon"/>
+    </head>	
+
+    <body onload="myFunction()">
+        <div id="topbox"></div>
+
+        <header>
+            <img src="Images/logo.png" alt="logo"/>
+        </header>
+
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li class="active"><a href="#">Sales</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <!--CHOPPER-->
+            <section>
+                <div class="mImage">
+                    <h1>Meet The Main Three Models We Have For Sail</h1>
+                    <figure>
+                        <img src="Images/adventure-beach-bicycle-web.jpg" alt="Mountain bike in river shore"/>
+                        <figcaption>
+                            <h1>CHOPPER</h1>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="smallBoxes-container">
+                    <div class="smallBoxes">
+                        <p> Origin: </p>
+                        <p> American </p>
+                        <button class="button"> Read more...</button>
+                    </div>
+                    <div class="smallBoxes">
+                        <p> Weight: </p>
+                        <p> 11,02 lb </p>
+                        <button class="button"> Read more...</button>
+                    </div>
+                    <div class="smallBoxes">
+                        <p> Frame: </p>
+                        <p> Aluminium Al. </p>
+                        <button class="button"> Read more...</button>
+                    </div>
+                    <div class="smallBoxes">
+                        <p> Price: </p>
+                        <p> $760 </p>
+                        <button class="button"> Read more...</button>
+                    </div>
+                </div>
+            </section>
+            <!--BULLS-->
+            <section>
+                <div class="mImage">
+                    <figure>
+                        <img src="Images/bicycle-bike-forest-web.jpg" alt="Mountain bike in the forest path"/>
+                        <figcaption>
+                            <h1>BULLS</h1>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="smallBoxes-container">
+                    <div class="smallBoxes">
+                        <p> Origin: </p>
+                        <p> American </p>
+                        <button class="button"> Read more...</button>
+                    </div>
+                    <div class="smallBoxes">
+                        <p> Weight: </p>
+                        <p> 11,02 lb </p>
+                        <button class="button"> Read more...</button>
+                    </div>
+                    <div class="smallBoxes">
+                        <p> Frame: </p>
+                        <p> Aluminium </p>
+                        <button class="button"> Read more...</button>
+                    </div>
+                    <div class="smallBoxes">
+                        <p> Price: </p>
+                        <p> $1000 </p>
+                        <button class="button"> Read more...</button>
+                    </div>
+                </div>
+            </section>
+            
+            <!--E-TOTEM-->
+            
+            <section>
+                <div class="mImage">
+                    <figure>
+                        <img src="Images/white-bike-1028.jpg" alt="Mountain bike in the forest path"/>
+                        <figcaption>
+                            <h1>E-TOTEM</h1>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="smallBoxes-container">
+                    <div class="smallBoxes">
+                        <p> Origin: </p>
+                        <p> German </p>
+                        <button class="button"> Read more...</button>
+                    </div>
+                    <div class="smallBoxes">
+                        <p> Weight: </p>
+                        <p> 8,82 lb </p>
+                        <button class="button"> Read more...</button>
+                    </div>
+                    <div class="smallBoxes">
+                        <p> Frame: </p>
+                        <p> Carbon Fiber </p>
+                        <button class="button"> Read more...</button>
+                    </div>
+                    <div class="smallBoxes">
+                        <p> Price: </p>
+                        <p> $1400 </p>
+                        <button class="button"> Read more...</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tours.html">Tours</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li class="active"><a href="#">Sales</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div>
+                <p>All content &copy;</p>
+                <p>Author: Elías Monzón</p> 
+                <p id="currentdate">Current date and time</p>
+            </div>
+        </footer>
+        <script src="currentDate.js"></script>
+        <script src="hamburger.js"></script>
+    </body>
+</html>

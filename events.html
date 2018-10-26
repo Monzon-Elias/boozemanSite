@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Mountain Spoke | Events Page</title>
+        <meta name="author" content="Elías Monzón">
+        <meta name="description" content="Events Page">
+        <link href="style.css" type="text/css" rel="stylesheet"/> 
+        <link href="mediumStyle.css" type="text/css" rel="stylesheet"/>
+        <link href="largeStyle.css" type="text/css" rel="stylesheet"/>
+        <link href="normalize.css" type="text/css" rel="stylesheet"/>
+        <link href="Images/favicon-32x32.png" rel="icon"/>
+    </head>	
+
+    <body onload="myFunction()">
+        <div id="topbox"></div>
+
+        <header>
+            <img src="Images/logo.png" alt="logo"/>
+        </header>
+
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li class="active"><a href="#">Events</a></li>
+                <li><a href="sales.html">Sales</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <!--"THE CYCLE THE CONTINENTAL DIVIDE"-->
+            <div class="mImage">
+                <h1>Cycle The Continental Divide</h1>
+                <blockquote> 
+                    Participate in this annual event with the best extreme cyclists in the United States and Canada! <br /><b>It is the best mountain bike circuit in the world.</b></blockquote>
+                <figure>
+                    <img src="Images/action-bicycle-bike2-web.jpg" alt="Mountain biking"/>
+                    <figcaption>You need to be very well prepared to take advantage of this super mountain bike circuit. It is for experienced athletes.
+                        </figcaption>
+                </figure>
+            </div>
+            <div class="smallBoxes-container">
+                <div class="smallBoxes">
+                    <p> Date: </p>
+                    <p> 10-09-18 </p>
+                    <button class="button"> Read more...</button>
+                </div>
+                <div class="smallBoxes">
+                    <p> Routes:</p>
+                    <p>River Side</p>
+                    <button class="button"> Read more...</button>
+                </div>
+                <div class="smallBoxes">
+                    <p> Cost: </p>
+                    <p> $300 </p>
+                    <button class="button"> Read more...</button>
+                </div>
+                <div class="smallBoxes">
+                    <p> Requirements: </p>
+                    <p> Your own bike</p>
+                    <button class="button"> Read more...</button>
+                </div>
+            </div>
+            <button class="joinIn"> Join in!</button>
+        </main>
+        
+        <!-- CONTACT FORM -->
+        <form>
+            
+            <h2>Register to this Event</h2>
+            
+            <!-- ABOUT YOU -->
+            <br />
+            <br />
+            <fieldset>
+                <legend>
+                    <h3>About you</h3>
+                </legend>
+                <label>
+                    Full Name:
+                </label>
+                <input type="text" name="name" size="30" minlength="5" pattern="[a-zA-Z]+" title="Please, use only Alpha caracters" required>
+                <br />
+                <label>
+                    Email:
+                </label>
+                <input type="email" name="email" size="30" placeholder="example@gmail.com" title="Your email" required>
+                <br />
+                <label>
+                    Telephone:
+                </label>
+                <input type="tel" name="usrtel" title="Please, set your phobe number" placeholder="123-4567-8901" minlength="9" maxlength="12" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required>
+                <label>
+                    Birth Date:
+                </label>
+                <input type="date" name="bday">
+                <label>
+                    Country:
+                </label>
+                <input type="text" name="country" required>
+                <br />
+                <label>
+                    Special Accommodations Comments:
+                </label>
+                <textarea rows="4" cols="40" id="comments"></textarea>
+                <br />
+                <br />
+                <button type="button" id="button">Send your info</button>
+            </fieldset>
+        </form>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tours.html">Tours</a></li>
+                    <li class="active"><a href="#">Events</a></li>
+                    <li><a href="sales.html">Sales</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div>
+                <p>All content &copy;</p>
+                <p>Author: Elías Monzón</p> 
+                <p id="currentdate">Current date and time</p>
+            </div>
+        </footer>
+        <script src="currentDate.js"></script>
+        <script src="hamburger.js"></script>
+    </body>
+</html>
